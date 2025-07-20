@@ -13,7 +13,7 @@ app.use(express.json());
 const config = {
     port: process.env.PORT || 3003,
     targetServerUrl: process.env.TARGET_SERVER_URL || 'http://localhost:3000',
-    cronSchedule: process.env.CRON_SCHEDULE || '* * * * *' // Every 1 minute
+    cronSchedule: process.env.CRON_SCHEDULE  // Every 1 minute
 };
 
 // Function to hit the cron_post endpoint
